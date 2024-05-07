@@ -22,4 +22,12 @@ public class PersonService {
         database.put(id, person);
         return person;
     }
+
+    public boolean checkId (String id) {
+        if(database.containsKey(id)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
